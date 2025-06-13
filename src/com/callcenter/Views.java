@@ -93,6 +93,7 @@ public class Views {
             }
 
             System.out.println("Ticket Category: " + t.getCategory());
+            System.out.println("Ticket Status: " + t.getStatus());
             System.out.println("Ticket Description: " + t.getDescription());
             System.out.println("Ticket ID: " + t.getTicketId());
             System.out.println("Attached Customer: " + (attachedCustomer != null ? attachedCustomer : "not found"));
