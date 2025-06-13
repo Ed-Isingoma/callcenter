@@ -164,10 +164,18 @@ public class Main {
                 Views.showAgents(agentsList);
                 break;
             case 2:
-                Views.showCustomers(customersList);
+                if (customersList.isEmpty()) {
+                    System.out.println("Agents List is currently empty");
+                } else {
+                    Views.showCustomers(customersList);
+                }
                 break;
             default:
-                Views.showTickets(ticketsList, customersList, agentsList);
+                if (ticketsList.isEmpty()) {
+                    System.out.println("Agents List is currently empty");
+                } else {
+                    Views.showTickets(ticketsList, customersList, agentsList);
+                }
         }
     }
 
